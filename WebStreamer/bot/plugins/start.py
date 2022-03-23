@@ -13,25 +13,20 @@ START_TEXT = """
 <i>👋 Hᴇʏ,</i>{}\n
 <i>I'ᴍ Tᴇʟᴇɢʀᴀᴍ Fɪʟᴇs Sᴛʀᴇᴀᴍɪɴɢ Bᴏᴛ ᴀs ᴡᴇʟʟ Dɪʀᴇᴄᴛ Lɪɴᴋs Gᴇɴᴇʀᴀᴛᴇ</i>\n
 <i>I am Instant Telegram File to Link Generator Bot.</i>\n
-<b>Cʟɪᴄᴋ ᴏɴ Hᴇʟᴘ ᴛᴏ ɢᴇᴛ ᴍᴏʀᴇ ɪɴғᴏʀᴍᴀᴛɪᴏɴ </b>\n\n
-<i><b>🍃 Bᴏᴛ Mᴀɪɴᴛᴀɪɴᴇᴅ Bʏ :</b>@ArkBotz</i>"""
+<b>Cʟɪᴄᴋ ᴏɴ Hᴇʟᴘ ᴛᴏ ɢᴇᴛ ᴍᴏʀᴇ ɪɴғᴏʀᴍᴀᴛɪᴏɴ </b>"""
 
 HELP_TEXT = """
 <i>➥ Sᴇɴᴅ ᴍᴇ ᴀɴʏ ꜰɪʟᴇ (ᴏʀ) ᴍᴇᴅɪᴀ ꜰʀᴏᴍ ᴛᴇʟᴇɢʀᴀᴍ.</i>
 <i>➥ I ᴡɪʟʟ ᴘʀᴏᴠɪᴅᴇ ᴇxᴛᴇʀɴᴀʟ ᴅɪʀᴇᴄᴛ ᴅᴏᴡɴʟᴏᴀᴅ ʟɪɴᴋ !.</i>
 <i>➥ Aᴅᴅ Mᴇ ɪɴ ʏᴏᴜʀ Cʜᴀɴɴᴇʟ Fᴏʀ Dɪʀᴇᴄᴛ Dᴏᴡɴʟᴏᴀᴅ Lɪɴᴋs Bᴜᴛᴛᴏɴ</i>
 <i>➥ Tʜɪs Pᴇʀᴍᴇᴀɴᴛ Lɪɴᴋ Wɪᴛʜ Fᴀsᴛᴇsᴛ Sᴘᴇᴇᴅ</i>\n
-<u>🔸 Click /start to start 🚸</u>\n
-<b>🔸 Click /about For more </b>\n
-<i>Cᴏɴᴛᴀᴄᴛ ᴅᴇᴠᴇʟᴏᴘᴇʀ (ᴏʀ) ʀᴇᴘᴏʀᴛ ʙᴜɢꜱ</i> <b>: <a href='https://t.me/ArkBotz'>[ ᴄʟɪᴄᴋ ʜᴇʀᴇ ]</a></b>"""
+<b>🔸 Click /start to start 🚸</b>\n
+<b>🔹 Click /about For more </b>\n"""
 
 ABOUT_TEXT = """
-<b>⚜ Mʏ ɴᴀᴍᴇ : FileStore</b>\n
-<b>🔸Vᴇʀꜱɪᴏɴ : <a href='https://telegram.me/ArkBotz'>3.0.1</a></b>\n
-<b>🔹Sᴏᴜʀᴄᴇ : <a href='https://telegram.me/ArkBotz'>Cʟɪᴄᴋ Hᴇʀᴇ</a></b>\n
-<b>🔸GitHub : <a href='https://telegram.me/ArkBotz'>Fᴏʟʟᴏᴡ</a></b>\n
-<b>🔹Dᴇᴠᴇʟᴏᴘᴇʀ : <a href='https://telegram.me/ArkBotz'>🅐︎🅝︎🅚︎🅘︎🅣︎ 🅚︎🅔︎🅢︎🅗︎🅡︎🅘︎</a></b>\n
-<b>🔸Lᴀꜱᴛ ᴜᴘᴅᴀᴛᴇᴅ : <a href='https://telegram.me/ArkBotz'>[ 11-ᴊᴜʟʏ-21 ] 04:35 PM</a></b>"""
+<b>⚜ Mʏ ɴᴀᴍᴇ : <a href='https://t.me/ArkFile2link_bot'>File to Link</a></b>\n
+<b>🔸Owner : <a href='https://telegram.me/ArkBotz'>ArkBotz</a></b>\n
+<b>🔹Developer : <a href='tg://settings'>Me and All Contributors</a></b>"""
 
 START_BUTTONS = InlineKeyboardMarkup(
         [[
@@ -100,7 +95,7 @@ async def start(b, m):
         await db.add_user(m.from_user.id)
         await b.send_message(
             Var.BIN_CHANNEL,
-            f"**Nᴇᴡ Usᴇʀ Jᴏɪɴᴇᴅ:** \n\n__Mʏ Nᴇᴡ Fʀɪᴇɴᴅ__ [{m.from_user.first_name}](tg://user?id={m.from_user.id}) __Sᴛᴀʀᴛᴇᴅ Yᴏᴜʀ Bᴏᴛ !!__"
+            f"#NEW_USER **Nᴇᴡ Usᴇʀ Jᴏɪɴᴇᴅ:** \n\n__Mʏ Nᴇᴡ Fʀɪᴇɴᴅ__ [{m.from_user.first_name}](tg://user?id={m.from_user.id}) __Sᴛᴀʀᴛᴇᴅ Yᴏᴜʀ Bᴏᴛ @ArkFile2link_bot !!__"
         )
     usr_cmd = m.text.split("_")[-1]
     if usr_cmd == "/start":
@@ -191,7 +186,7 @@ async def start(b, m):
 <b>📂 Fɪʟᴇ ɴᴀᴍᴇ :</b> <i>{}</i>\n
 <b>📦 Fɪʟᴇ ꜱɪᴢᴇ :</b> <i>{}</i>\n
 <b>📥 Dᴏᴡɴʟᴏᴀᴅ :</b> <i>{}</i>\n
-<b>🚸 Nᴏᴛᴇ : Lɪɴᴋ ᴇxᴘɪʀᴇᴅ ɪɴ 24 ʜᴏᴜʀꜱ</b>\n
+<b>🚸 Nᴏᴛᴇ : Tʜɪs ᴘᴇʀᴍᴀɴᴇɴᴛ Lɪɴᴋ, Nᴏᴛ Exᴘɪʀᴇᴅ</b>\n
 <i>🍃 Bᴏᴛ Mᴀɪɴᴛᴀɪɴᴇᴅ Bʏ :</i> <b>@ArkBotz</b>
 """
 
@@ -218,7 +213,7 @@ async def help_handler(bot, message):
         await db.add_user(message.from_user.id)
         await bot.send_message(
             Var.BIN_CHANNEL,
-            f"**Nᴇᴡ Usᴇʀ Jᴏɪɴᴇᴅ **\n\n__Mʏ Nᴇᴡ Fʀɪᴇɴᴅ__ [{message.from_user.first_name}](tg://user?id={message.from_user.id}) __Started Your Bot !!__"
+            f"#NEW_USER **Nᴇᴡ Usᴇʀ Jᴏɪɴᴇᴅ **\n\n__Mʏ Nᴇᴡ Fʀɪᴇɴᴅ__ [{message.from_user.first_name}](tg://user?id={message.from_user.id}) __Started Your Bot @ArkFile2link_bot !!__"
         )
     if Var.UPDATES_CHANNEL is not None:
         try:
