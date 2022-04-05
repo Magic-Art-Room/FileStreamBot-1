@@ -120,7 +120,7 @@ async def channel_receive_handler(bot, broadcast):
             message_id=broadcast.message_id,
             reply_markup=InlineKeyboardMarkup(
                 [[InlineKeyboardButton("Dᴏᴡɴʟᴏᴀᴅ ʟɪɴᴋ 📥", url=f"https://t.me/{(await bot.get_me()).username}?start=ArkBotz_{str(log_msg.message_id)}"),
-                 InlineKeyboardButton("📺 Stream", url="https://ark-file2link.herokuapp.com/Watch/(log_msg.message_id)")
+                 InlineKeyboardButton("📺 Stream", url="https://ark-file2link.herokuapp.com/Watch/log_msg.message_id")
              ]]
             # [[InlineKeyboardButton("Dᴏᴡɴʟᴏᴀᴅ ʟɪɴᴋ 📥", url=f"https://t.me/FxStreamBot?start=ArkBotz_{str(log_msg.message_id)}")]])
         )
