@@ -30,7 +30,7 @@ ABOUT_TEXT = """
 <b>🔸Vᴇʀꜱɪᴏɴ : <a href='https://telegram.me/ArkBotz'>3.0.1</a></b>\n
 <b>🔹Sᴏᴜʀᴄᴇ : <a href='https://telegram.me/ArkBotz'>Cʟɪᴄᴋ Hᴇʀᴇ</a></b>\n
 <b>🔸GitHub : <a href='https://telegram.me/ArkBotz'>Fᴏʟʟᴏᴡ</a></b>\n
-<b>🔹Dᴇᴠᴇʟᴏᴘᴇʀ : <a href='https://telegram.me/ArkBotz'>🅐︎🅝︎🅚︎🅘︎🅣︎ 🅚︎🅔︎🅢︎🅗︎🅡︎🅘︎</a></b>\n
+<b>🔹Dᴇᴠᴇʟᴏᴘᴇʀ : <a href='https://telegram.me/ArkBotz'>ARKBotz</a></b>\n
 <b>🔸Lᴀꜱᴛ ᴜᴘᴅᴀᴛᴇᴅ : <a href='https://telegram.me/ArkBotz'>[ 11-ᴊᴜʟʏ-21 ] 04:35 PM</a></b>"""
 
 START_BUTTONS = InlineKeyboardMarkup(
@@ -171,7 +171,7 @@ async def start(b, m):
             except Exception:
                 await b.send_message(
                     chat_id=m.chat.id,
-                    text="**Sᴏᴍᴇᴛʜɪɴɢ ᴡᴇɴᴛ Wʀᴏɴɢ. Cᴏɴᴛᴀᴄᴛ ᴍᴇ** [🅐︎🅝︎🅚︎🅘︎🅣︎ 🅚︎🅔︎🅢︎🅗︎🅡︎🅘︎](https://t.me/ArkBotz).",
+                    text="**Sᴏᴍᴇᴛʜɪɴɢ ᴡᴇɴᴛ Wʀᴏɴɢ. Cᴏɴᴛᴀᴄᴛ ᴍᴇ** [ARKBotz](https://t.me/ArkBotz).",
                     parse_mode="markdown",
                     disable_web_page_preview=True)
                 return
